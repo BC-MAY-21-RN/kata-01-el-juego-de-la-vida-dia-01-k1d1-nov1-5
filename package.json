@@ -1,0 +1,15 @@
+{
+  "name": "kata-01-el-juego-de-la-vida-dia-01-k1d1-nov1-5-master",
+  "version": "1.0.0",
+  "description": "![BrightCoders Logo](img/logo-bc.png)",
+  "main": "root.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.2.0"
+  }
+}
