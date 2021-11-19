@@ -15,8 +15,12 @@ var matriz = [
   4. Cualquier celda muerta con exactamente tres vecinos vivos se convierte en una celda viva.
 */
 
+let result = document.getElementById('result');
+
 for(var i = 1; i<= cantidadGeneraciones; i++){
     console.log(`Gen ${i}`);
+
+    result.innerHTML += `<h4>Gen: ${i}</h4>`;
 
     matriz.forEach(renglon => {
       let renglonn = ""
@@ -24,10 +28,17 @@ for(var i = 1; i<= cantidadGeneraciones; i++){
         renglonn += ` ${celula}`
       })
       console.log(renglonn)
+      result.innerHTML += renglon + "<br></br>"
     })
+
+    result.innerHTML += "<br></br>"
 
     matrizPrincipal();
 }
+
+
+
+
 
 function validarEstado (vecinosVivos, celula){
   if(celula == "O" && vecinosVivos < 2 ){
